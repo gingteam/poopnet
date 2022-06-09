@@ -5,3 +5,4 @@ Usage:
 - CNC port: 12345, Bot server port: 54321
 - Demo video: Soon update...
 - I just made it last night so It only has the remote shell execution feature, I'll try to add more functions soon XD
+- Change the SERVER_IP and SERVER_PORT in client/configs.go and SERVER_IP, SERVER_BOT, BOT_PORT in server/configs.go then build the source.
