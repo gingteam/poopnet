@@ -75,6 +75,9 @@ func (server *Server) Handle() {
 		server.Colored(32, "sussybaka@PoopNet~# ")
 		command, err := server.ReadLine()
 		if err != nil {
+			break
+		}
+		if command == "" {
 			continue
 		}
 		if command == "help" {
