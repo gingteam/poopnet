@@ -41,11 +41,11 @@ func (client *Client) Handle() {
 		}
 		if data == PING_MESSAGE {
 			client.Send(PONG_MESSAGE)
-			break
+			continue
 		}
 		command, err := NewCommand(data)
 		if err != nil {
-			break
+			continue 
 		}
 		command.Handle()
 	}
